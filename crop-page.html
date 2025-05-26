@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animal Husbandry</title>
+  <style>
+    body {
+      background-image: url('bg4.jpg');
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    header img {
+      width: 150px;
+      border-radius: 8px;
+    }
+
+    .content {
+      text-align: center;
+      padding: 50px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    .pdf-card {
+      background: #fff;
+      width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      color: #333;
+      text-decoration: none;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .pdf-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .pdf-card .card-header {
+      padding: 20px;
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+    }
+
+    .pdf-card .card-body {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .pdf-card .card-body i {
+      font-size: 2em;
+      color: #4CAF50;
+    }
+
+    .pdf-card .card-body span {
+      font-size: 1em;
+    }
+
+    .home-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1em;
+    }
+
+    .chat-launcher {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: black;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .pdf-card { width: 90%; }
+    }
+  </style>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <a href="index.html" class="home-btn">Home</a>
+
+  <header>
+    <img src="college.jpeg" alt="Logo">
+  </header>
+
+  <div class="content">
+    <h2>Crop Husbandry</h2>
+
+    <a href="https://drive.google.com/file/d/1Hq3w8YxrFnEBowkX-J1E9PPnOrhBSZTU/view?usp=drive_link" class="pdf-card" target="_blank">
+      <div class="card-header">Content Areas</div>
+      <div class="card-body">
+        <i class="fas fa-leaf"></i>
+        <span>Overview of key crop husbandry content areas.</span>
+      </div>
+    </a>
+
+    <a href="https://drive.google.com/file/d/1zyy9ZrfvRMYYXTtDS1pmTv1xYdJe91nu/view?usp=sharing" class="pdf-card" target="_blank">
+      <div class="card-header">Book 1 - Part 1</div>
+      <div class="card-body">
+        <i class="fas fa-seedling"></i>
+        <span>Introduction to crop production and soil preparation.</span>
+      </div>
+    </a>
+
+    <a href="https://drive.google.com/file/d/1x-pbqQ302-uUGT0bVyWOcQCRjuxt06AV/view?usp=sharing" class="pdf-card" target="_blank">
+      <div class="card-header">Book 1 - Part 2</div>
+      <div class="card-body">
+        <i class="fas fa-tractor"></i>
+        <span>Techniques in planting, irrigation, and care of crops.</span>
+      </div>
+    </a>
+
+    <a href="https://drive.google.com/file/d/1UDg0v8ELwDSoqabA9qcv5ojCrUW9uIyd/view?usp=sharing" class="pdf-card" target="_blank">
+      <div class="card-header">Book 1 - Part 3</div>
+      <div class="card-body">
+        <i class="fas fa-bug"></i>
+        <span>Crop protection, pests, and sustainable practices.</span>
+      </div>
+    </a>
+
+    <a href="https://drive.google.com/file/d/1jz4gCem1D8DX3hvu5JL8WhBINU2GBNER/view?usp=sharing" class="pdf-card" target="_blank">
+      <div class="card-header">Book 1 - Part 4</div>
+      <div class="card-body">
+        <i class="fas fa-warehouse"></i>
+        <span>Harvesting, post-harvest handling and storage methods.</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="chat-launcher" onclick="window.location.href='https://chatgpt.com/'">
+    💬
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
